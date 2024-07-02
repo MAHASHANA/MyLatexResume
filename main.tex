@@ -1,0 +1,100 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{hyperref}
+\geometry{top=2mm, bottom=2mm, left=2mm, right=2mm}
+\setlist{nolistsep}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\pagenumbering{gobble}
+
+% Custom section spacing
+\titlespacing\section{0pt}{2pt plus 2pt minus 2pt}{2pt plus 1pt minus 1pt}
+\titlespacing\subsection{0pt}{2pt plus 1pt minus 1pt}{2pt plus 1pt minus 1pt}
+
+% Custom section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{name=\section,numberless}{\large\bfseries}{}{0em}{}[\titlerule]
+
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \bfseries Srinivas Peri}\\
+    +1 (857)-675-0644 | \texttt{peri.sr@northeastern.edu}|
+    \href{https://www.linkedin.com/in/srinivas-peri-yob1998}{LinkedIn} |\href{https://github.com/MAHASHANA/}{GitHub}
+\end{center}
+
+\vspace{0.5ex}
+
+\section*{Professional Summary}
+Highly motivated Master of Science in Robotics graduate with extensive hands-on experience in robotics, computer vision, and autonomous systems. Demonstrated expertise in developing AI-driven systems, enhancing simulation environments, and implementing advanced machine learning algorithms for object detection and navigation. Proven ability to lead projects from conception to deployment, seeking a challenging role to leverage my skills in advanced robotics and AI solutions.
+
+\section*{Education}
+\noindent\textbf{Northeastern University, Boston MA} \hfill Dec 2024 \\
+Master of Science in Robotics (ECE) | GPA: 3.7/4 \\
+Coursework: Robotic Sensing and Navigation, Reinforcement Learning, Computer Vision and Pattern Recognition, Mobile Robotics, Machine Learning, and Reinforcement Learning
+
+\noindent\textbf{Sreenidhi Institute of Science and Technology, Hyderabad India} \hfill Jun 2020 \\
+Bachelor of Technology in Electronics and Communications Engineering | GPA: 8.15/10 \\
+Coursework: Digital Signal Processing, Object Oriented Programming, Microprocessors and Microcontrollers
+
+\section*{Experience}
+\noindent\textbf{Graduate Research Assistant, Northeastern University | Boston, MA} \hfill Apr 2024 – Present
+\begin{itemize}
+    \item Spearheading the development of drones designed to navigate GPS-denied environments through advanced Visual-Inertial Odometry (VIO) techniques, significantly improving autonomous flight capabilities.
+    \item Successfully implemented \textbf{RTAB SLAM} in \textbf{ROS2}, integrating \textbf{sensor fusion} with the D435 depth camera and flight controller IMU, enhancing the accuracy and reliability of spatial mapping in complex environments.
+    \item Currently focused on advancing autonomous capabilities, including automated takeoff, precise waypoint navigation, and the development of automatic takeoff and landing systems for dynamic ground vehicles.
+\end{itemize}
+
+\noindent\textbf{Research Intern (MBSE \& Autonomous Driving), TWT.GmbH | Munich, Germany} \hfill Jun 2023 – Dec 2023
+\begin{itemize}
+    \item Led the innovation of a CNN-based AI system for precise rain simulation, seamlessly integrating it with \textbf{Blender’s particle system}. Developed an \textbf{LSTM model} to predict \textbf{Lidar} noise under varying rain intensities, significantly enhancing the realism and precision of weather impact simulations, thereby improving Lidar data accuracy in diverse scenarios.
+    \item Played a key role in the \textbf{SUMO} and \textbf{Unreal Engine 5} integration project, emphasizing \textbf{georeferencing} for accurate real-world geography mapping. Enhanced the Tronis-Sumo plugin by addressing critical errors and optimizing code, resulting in substantial advancements in \textbf{traffic simulation realism}.
+\end{itemize}
+
+\noindent\textbf{Assistant System Engineer, TATA Consultancy Services | Hyderabad, India} \hfill Apr 2021 – Jun 2022
+\begin{itemize}
+    \item Engineered \textbf{sophisticated Splunk queries} and dashboards to enable real-time \textbf{data analysis} and tracking, enhancing operational efficiency and decision-making processes.
+    \item Collaborated with a 16-member team to efficiently address client requests for log retrieval and analysis, providing critical support across the Americas and Europe regions.
+\end{itemize}
+
+\noindent\textbf{IOT Developer, Robic Rufarm | Hyderabad, India} \hfill Oct 2020 – Feb 2021
+\begin{itemize}
+    \item Developed innovative software solutions for monitoring pH and oxygen levels in aquaculture, incorporating real-time data visualization tools optimized for cloud deployment.
+\end{itemize}
+
+\noindent\textbf{Drones and Robotics Research Intern, Activa Software.Inc  | Hyderabad, India} \hfill Jun 2019 – Jul 2020
+\begin{itemize}
+    \item Engineered a GPS-equipped autonomous UAV by integrating the u-blox GPS with the Pixhawk PX4 flight controller, achieving significant advancements in autonomous navigation.
+    \item Attained autonomous navigation by programming the UAV to traverse predetermined checkpoints utilizing the open-source Ardupilot autopilot system.
+    \item Implemented a 3D LIDAR-LOAM approach to generate high-quality point clouds of large-scale structures, greatly enhancing virtual reality visualization accuracy and detail.
+\end{itemize}
+
+\section*{Academic Research \& Projects}
+\noindent\textbf{Autonomous Vehicle Navigation with DQN in Carla | TensorFlow, OpenCV, UnrealEngine} \hfill Apr 2024 – May 2024
+\begin{itemize}
+    \item Designed and developed a DQN-based autonomous vehicle simulation in CARLA, enabling the vehicle to consistently navigate at 50 mph while avoiding obstacles, demonstrating robust autonomous driving capabilities.
+\end{itemize}
+
+\noindent\textbf{Object Detection Using Lidar Point Clouds | Open3d ML} \hfill Dec 2022 – Dec 2022
+\begin{itemize}
+    \item Conducted extensive research and implementation of 3D-object detection techniques using VLP-16 LiDAR point cloud data, enhancing object detection accuracy.
+    \item Improved object detection efficiency by implementing voxel down-sampling (reducing 26,000 points to 8,000) and utilizing the DBSCAN clustering technique from Open-3DML to accurately define object shapes and draw bounding boxes.
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages}: Python, C++, MATLAB
+    \item \textbf{Operating Systems}: Linux, Windows
+    \item \textbf{Hardware Expertise}: Raspberry Pi, Nvidia Jetson Boards, Analog and Digital Sensors, Arduino
+    \item \textbf{Technologies}: Robotics, Drones, Computer Vision, Neural Networks, Visual \& Lidar SLAM, IoT
+    \item \textbf{Software Tools}: ROS/ROS2, Gazebo, MeshLab, GitHub, Unreal Engine, Splunk, Blender
+    \item \textbf{Communication Protocols}: UART, I2C, MSP, MAVLink 
+    \item \textbf{Libraries and Frameworks}: Pandas, NumPy, SciPy, Matplotlib, Scikit-Learn, OpenCV, CUDA, TensorFlow, Blender Python (Bpy)
+\end{itemize}
+
+\end{document}
