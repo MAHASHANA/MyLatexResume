@@ -6,14 +6,14 @@
 \usepackage{fancyhdr}
 \usepackage{tikz}
 \usepackage{hyperref}
-\geometry{top=2mm, bottom=2mm, left=2mm, right=2mm}
+\geometry{top=2mm, bottom=2mm, left= 5mm, right= 5mm}
 \setlist{nolistsep}
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \pagenumbering{gobble}
 
 % Custom section spacing
-\titlespacing\section{0pt}{2pt plus 2pt minus 2pt}{2pt plus 1pt minus 1pt}
-\titlespacing\subsection{0pt}{2pt plus 1pt minus 1pt}{2pt plus 1pt minus 1pt}
+\titlespacing\section{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt minus 1pt}
+\titlespacing\subsection{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt minus 1pt}
 
 % Custom section formatting
 \titleformat{\section}{\large\bfseries}{}{0em}{}
@@ -24,14 +24,11 @@
 
 \begin{center}
     {\LARGE \bfseries Srinivas Peri}\\
-    +1 (857)-675-0644 | \texttt{peri.sr@northeastern.edu}|
+    +1 (857)-675-0644 | {\href{https://outlook.office.com/mail/}{peri.sr@northeastern.edu}}|
     \href{https://www.linkedin.com/in/srinivas-peri-yob1998}{LinkedIn} |\href{https://github.com/MAHASHANA/}{GitHub}
 \end{center}
 
 \vspace{0.5ex}
-
-\section*{Professional Summary}
-Highly motivated Master of Science in Robotics graduate with extensive hands-on experience in robotics, computer vision, and autonomous systems. Demonstrated expertise in developing AI-driven systems, enhancing simulation environments, and implementing advanced machine learning algorithms for object detection and navigation. Proven ability to lead projects from conception to deployment, seeking a challenging role to leverage my skills in advanced robotics and AI solutions.
 
 \section*{Education}
 \noindent\textbf{Northeastern University, Boston MA} \hfill Dec 2024 \\
@@ -50,18 +47,25 @@ Coursework: Digital Signal Processing, Object Oriented Programming, Microprocess
     \item Currently focused on advancing autonomous capabilities, including automated takeoff, precise waypoint navigation, and the development of automatic takeoff and landing systems for dynamic ground vehicles.
 \end{itemize}
 
-\noindent\textbf{Research Intern (MBSE \& Autonomous Driving), TWT.GmbH | Munich, Germany} \hfill Jun 2023 – Dec 2023
+\noindent\textbf{Research Intern MBSE and Autonomous Driving, TWT Gmbh | Munich, Germany} \hfill Jun 2023 – Dec 2023
+
+    \noindent\textbf{Project: Realistic Rain Simulation}
 \begin{itemize}
-    \item Led the innovation of a CNN-based AI system for precise rain simulation, seamlessly integrating it with \textbf{Blender’s particle system}. Developed an \textbf{LSTM model} to predict \textbf{Lidar} noise under varying rain intensities, significantly enhancing the realism and precision of weather impact simulations, thereby improving Lidar data accuracy in diverse scenarios.
-    \item Played a key role in the \textbf{SUMO} and \textbf{Unreal Engine 5} integration project, emphasizing \textbf{georeferencing} for accurate real-world geography mapping. Enhanced the Tronis-Sumo plugin by addressing critical errors and optimizing code, resulting in substantial advancements in \textbf{traffic simulation realism}.
+    \item Led the development of a CNN-based AI system for rain simulation, integrating it with Blender’s particle system.
+    \item Developed an \textbf{LSTM} model to predict Lidar noise under varying rain intensities, improving weather impact simulation realism. Achieved a \textbf{classification} \textbf{model} with \textbf{92\%} accuracy by uncovering relationships between rain intensity, Lidar noise, and image-based intensity maps.
+    \item Integrated multiple sensor data (Lidar, disdrometer, and RGB) to enhance rain intensity predictions and predict the level of loss in point cloud data, based on the methodologies from this  \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10011628}{publication}.
+\end{itemize}
+\noindent\textbf {Project: SaveNow}
+\begin{itemize}
+    \item Key contributor in SUMO and Unreal Engine 5 integration, focusing on georeferencing for accurate real-world mapping.
+    \item Enhanced the Tronis-Sumo plugin, improving traffic simulation realism for the city of Ingolstadt.
 \end{itemize}
 
 \noindent\textbf{Assistant System Engineer, TATA Consultancy Services | Hyderabad, India} \hfill Apr 2021 – Jun 2022
 \begin{itemize}
-    \item Engineered \textbf{sophisticated Splunk queries} and dashboards to enable real-time \textbf{data analysis} and tracking, enhancing operational efficiency and decision-making processes.
+    \item Engineered \textbf{sophisticated Splunk queries} and dashboards to enable real-time \textbf{data analysis} and tracking, enhancing operational efficiency and decision-making processes by 30\%.
     \item Collaborated with a 16-member team to efficiently address client requests for log retrieval and analysis, providing critical support across the Americas and Europe regions.
 \end{itemize}
-
 \noindent\textbf{IOT Developer, Robic Rufarm | Hyderabad, India} \hfill Oct 2020 – Feb 2021
 \begin{itemize}
     \item Developed innovative software solutions for monitoring pH and oxygen levels in aquaculture, incorporating real-time data visualization tools optimized for cloud deployment.
@@ -74,10 +78,12 @@ Coursework: Digital Signal Processing, Object Oriented Programming, Microprocess
     \item Implemented a 3D LIDAR-LOAM approach to generate high-quality point clouds of large-scale structures, greatly enhancing virtual reality visualization accuracy and detail.
 \end{itemize}
 
-\section*{Academic Research \& Projects}
+\section*{Projects}
 \noindent\textbf{Autonomous Vehicle Navigation with DQN in Carla | TensorFlow, OpenCV, UnrealEngine} \hfill Apr 2024 – May 2024
 \begin{itemize}
-    \item Designed and developed a DQN-based autonomous vehicle simulation in CARLA, enabling the vehicle to consistently navigate at 50 mph while avoiding obstacles, demonstrating robust autonomous driving capabilities.
+    \item Designed and developed a DQN-based autonomous vehicle simulation in CARLA, achieving robust navigation at 50 mph while avoiding obstacles.
+    \item Demonstrated strong autonomous driving capabilities with the vehicle consistently navigating complex environments.
+    \item Currently refining the system to reach the optimal policy by adding rules and modifications, addressing the current suboptimal policy where the vehicle sometimes follows circular paths.
 \end{itemize}
 
 \noindent\textbf{Object Detection Using Lidar Point Clouds | Open3d ML} \hfill Dec 2022 – Dec 2022
@@ -85,16 +91,22 @@ Coursework: Digital Signal Processing, Object Oriented Programming, Microprocess
     \item Conducted extensive research and implementation of 3D-object detection techniques using VLP-16 LiDAR point cloud data, enhancing object detection accuracy.
     \item Improved object detection efficiency by implementing voxel down-sampling (reducing 26,000 points to 8,000) and utilizing the DBSCAN clustering technique from Open-3DML to accurately define object shapes and draw bounding boxes.
 \end{itemize}
+\section*{Publications}
+\begin{itemize}
+    \item "LiDAR-Driven Rain Intensity Predictions: A Robust Classifier Modelling Approach." Srinivas Peri et al. Pending submission to an international conference.
+\end{itemize}
 
 \section*{Skills}
+{\fontsize{10pt}{10pt}\selectfont  % Start of custom font size
 \begin{itemize}
     \item \textbf{Programming Languages}: Python, C++, MATLAB
     \item \textbf{Operating Systems}: Linux, Windows
     \item \textbf{Hardware Expertise}: Raspberry Pi, Nvidia Jetson Boards, Analog and Digital Sensors, Arduino
-    \item \textbf{Technologies}: Robotics, Drones, Computer Vision, Neural Networks, Visual \& Lidar SLAM, IoT
+    \item \textbf{Technologies}: Robotics, Drones, Computer Vision, Neural Networks, Visual \& Lidar SLAM, Sensor Fusion, IoT
     \item \textbf{Software Tools}: ROS/ROS2, Gazebo, MeshLab, GitHub, Unreal Engine, Splunk, Blender
     \item \textbf{Communication Protocols}: UART, I2C, MSP, MAVLink 
-    \item \textbf{Libraries and Frameworks}: Pandas, NumPy, SciPy, Matplotlib, Scikit-Learn, OpenCV, CUDA, TensorFlow, Blender Python (Bpy)
+    \item \textbf{Libraries and Frameworks}: Pandas, NumPy, SciPy, Matplotlib, Scikit-Learn, OpenCV, CUDA, TensorFlow
 \end{itemize}
+}  % End of custom font size
 
 \end{document}
